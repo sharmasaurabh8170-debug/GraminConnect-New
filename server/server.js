@@ -7,12 +7,17 @@ dotenv.config();
 
 const connectDB = require("./config/db");
 const cropRoutes = require("./routes/cropRoutes");
-
+const recommendationRoutes = require("./routes/recommendationRoutes");
 const app = express();
+const orderRoutes = require("./routes/orderRoutes");
+const aiRoutes = require("./routes/aiRoutes");
 const userRoutes = require("./routes/userRoutes");
 app.use(cors());
 app.use(express.json());
 app.use("/api/users", userRoutes);
+app.use("/api/orders", orderRoutes);
+app.use("/api/ai", aiRoutes);
+app.use("/api/recommendations", recommendationRoutes);
 // Connect MongoDB
 connectDB();
 
