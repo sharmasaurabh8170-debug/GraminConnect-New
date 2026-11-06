@@ -26,7 +26,7 @@ import {
 
 import "./index.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "/api";
 
 const categories = [
   { name: "Vegetables", emoji: "🥦" },
