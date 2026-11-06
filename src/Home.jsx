@@ -907,12 +907,10 @@ function Home() {
 
           <div className="text-center">
             <p className="font-bold uppercase tracking-widest text-green-600">
-              Explore Our Collection
+              <h2>Shop by Category</h2>
             </p>
 
-            <h2 className="mt-3 text-3xl font-extrabold">
-              Shop by Category
-            </h2>
+            
 
             <p className="mt-4 text-gray-600">
               Find fresh, quality produce for your everyday needs.
@@ -1423,8 +1421,8 @@ function Home() {
       {checkoutOpen && currentUser && userRole === "customer" && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-black/50 p-4">
 
-          <div className="my-auto w-full max-w-lg rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
-
+        <div className="my-auto max-h-[calc(100dvh-2rem)] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-5 shadow-2xl sm:p-8">
+          
             <div className="flex items-center justify-between">
               <div>
                 <h2 className="text-2xl font-extrabold text-green-800">
