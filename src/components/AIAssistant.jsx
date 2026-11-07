@@ -23,7 +23,7 @@ const customerQuestions = [
   "Find affordable vegetables",
 ];
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://graminconnect-new.onrender.com";
 
 function isProductQuery(message) {
   const keywords = [
@@ -102,7 +102,7 @@ export default function AIAssistant() {
         endpoint = "/api/recommendations";
       }
 
-      const response = await fetch(`${API_URL}${endpoint}`, {
+      const response = await fetch(`https://graminconnect-new.onrender.com${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

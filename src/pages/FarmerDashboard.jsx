@@ -8,7 +8,7 @@ function FarmerDashboard() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/crops");
+        const response = await fetch("https://graminconnect-new.onrender.com/api/crops");
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");

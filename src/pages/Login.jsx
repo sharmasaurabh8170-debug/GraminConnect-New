@@ -32,7 +32,7 @@ const redirectUser = async (firebaseUser) => {
 const token = await firebaseUser.getIdToken();
 
 const response = await fetch(
-  "http://localhost:5000/api/users/profile",
+  "https://graminconnect-new.onrender.com/api/users/profile",
   {
     method: "GET",
     headers: {

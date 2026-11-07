@@ -87,7 +87,7 @@ function Home() {
       try {
         const token = await user.getIdToken();
 
-        const response = await fetch(`${API_URL}/api/users/profile`, {
+        const response = await fetch(`https://graminconnect-new.onrender.com/api/users/profile`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -132,7 +132,7 @@ function Home() {
       setLoading(true);
       setError("");
 
-      const response = await fetch(`${API_URL}/api/crops`);
+      const response = await fetch("https://graminconnect-new.onrender.com/api/crops");
 
       if (!response.ok) {
         throw new Error("Unable to load products.");
@@ -449,7 +449,7 @@ function Home() {
 
       const token = await user.getIdToken();
 
-      const response = await fetch(`${API_URL}/api/orders/place`, {
+      const response = await fetch(`https://graminconnect-new.onrender.com/api/orders/place`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -21,7 +21,7 @@ function CustomerDashboard() {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://localhost:5000/api/crops");
+      const response = await fetch("https://graminconnect-new.onrender.com/api/crops");
 
       if (!response.ok) {
         throw new Error("Unable to fetch crops");

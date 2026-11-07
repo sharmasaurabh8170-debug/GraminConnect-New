@@ -72,7 +72,7 @@ try {
 
   // 4. Save crop details in MongoDB
   const response = await fetch(
-    "http://localhost:5000/api/crops/add",
+    "https://graminconnect-new.onrender.com/api/crops/add",
     {
       method: "POST",
       headers: {
